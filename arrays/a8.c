@@ -15,12 +15,12 @@ void main()
 			{
 				co[count]=b[y];
 				count++;
-			
+
 			}
-		
+
 		}
 		printf("total element\n",count);
-	
+
 	}
 
 

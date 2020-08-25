@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 void main()
 {
 
@@ -15,19 +14,19 @@ void main()
 	{
 		scanf("%d",&a[i]);
 		i++;
-		
+
 	}
-//	i=0;
-	
+	//	i=0;
+
 
 	printf("rvrs ary values");
 	i=0;
 	n-1;
 	while(i<n)
 	{
-//		printf("rvrs ary values");
+		//		printf("rvrs ary values");
 		scanf("%d",&a[n-1]);
 		i--;
 	}
-	
+
 }

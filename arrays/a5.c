@@ -4,10 +4,10 @@ void main()
 {
 	int i,n;
 	int a[i],b[i],c[10];
-//	int i,n
+	//	int i,n
 	printf("enter the nubr of elemnts a : \n");
 	scanf("%d",&n);
-	
+
 	printf("enter the values a\n");
 	i=0;
 	while(i<n)
@@ -27,7 +27,7 @@ void main()
 	i=0;
 	while(i<n)
 	{
-		
+
 		c[10]=a[i];
 		c[10]=b[i];
 
