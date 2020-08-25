@@ -1,26 +1,27 @@
 
+/* Sum of all elements in Array */
 
-#include<stdio.h>
+#include <stdio.h>
 
 void main()
 {
 
 	int n, sum = 0, c, array[5];
 
-	printf("Enter the number of: ");
-	scanf("%d", &n);
+	printf("Enter 5 integers \n\n");
 
-	printf("Enter %d integers \n\n", n);
-
-	//for(c = 0; c < n; c++)
-	//{
-	//  scanf("%d", &array[c]);
-	//sum += array[c];    
-	//
+	/* Scan Array Elements */
 	c=0;
 	while(c<n)
 	{
 		scanf("%d",&array[c]);
+		c++;
+	}
+
+	/* Sum all the elements */
+	c=0;
+	while(c<n)
+	{
 		sum = sum + array[c];		
 		c++;
 	}

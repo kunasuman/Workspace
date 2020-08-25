@@ -1,23 +1,26 @@
+
+/* Number of Even elements in an Array */
+
 #include <stdio.h>
+
 void main()
 {
 
-	int i, n, even, odd;    int a[i];
+	int i, n, even, odd;
+	int a[10];
 
-	printf("Enter size of the array: ");
-	scanf("%d", &n);
-	printf("Enter // elements in array: ");
+	printf("Enter elements in array: ");
+
 	i=0;
-	while( i<n)
+	while(i < 10)
 	{
-
 		scanf("%d", &a[i]);
 		i++;
 	}
 	even = 0;
 	odd  = 0;
 	i=0;
-	while(i<n)
+	while(i < 10)
 	{
 
 		if(a[i]%2 == 0)
