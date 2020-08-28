@@ -1,30 +1,29 @@
 
+/* Find an element in an array */
+
 #include <stdio.h>
 
 void main()
 {
-	int a[]={1, 32, 17, 45, 76, 23, 14, 52, 98, 4};
-	int num,i,p,c=0;
-	// int n=sizeof(a)/sizeof(a[0]);
-	int n;
-	printf("Enter a value :\n");
-	scanf("%d",&num);
+        int a[]={1, 32, 17, 45, 76, 23, 14, 52, 98, 4};
+        int num,i,p,flag=0;
 
-	for(i=0;i<n;i++)
-	{
+        printf("Enter a value :");
+        scanf("%d",&num);
 
-		if(a[i]==num)
-		{
-			p=i;
-			printf("Element index is %d",p);
-			c=1;
-			break;
-		}
-		else
-		{
-			printf("not foun d in arry\n");
-			//c=0;
-		}
+        for(i=0;i < 10;i++)
+        {
+                if(a[i]==num)
+                {
+                        printf("Element index is %d \n",i);
+                        flag = 1;
+                        break;
+                }
+        }
 
-	}
+        if (flag == 0)
+        {
+                printf("not foun d in arry\n");
+        }
+
 }

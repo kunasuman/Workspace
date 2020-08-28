@@ -1,4 +1,7 @@
-#include<stdio.h>
+
+/* Find common elements in two arrays */
+
+#include <stdio.h>
 
 void main()
 {
@@ -7,6 +10,7 @@ void main()
 	int c;
 	int co[10],x,y;
 	int count=0;
+
 	for(x=0;x<5;x++)
 	{
 		for(y=0;y<5;y++)
@@ -19,9 +23,7 @@ void main()
 			}
 
 		}
-		printf("total element\n",count);
-
 	}
 
-
+	printf("total common element are: %d\n",count);
 }

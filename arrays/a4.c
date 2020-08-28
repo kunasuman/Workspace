@@ -2,31 +2,26 @@
 void main()
 {
 
-	int n,i;
-	int a[i],b[i];
-
-	printf("enter nubr of elements\n");
-	scanf("%d",&n);
+	int i,j;
+	int a[5],b[5];
 
 	printf("enter the values arays \n");
 	i=0;
-	while(i<n)
+	while(i<5)
 	{
 		scanf("%d",&a[i]);
 		i++;
-
 	}
-	//	i=0;
 
 
-	printf("rvrs ary values");
-	i=0;
-	n-1;
-	while(i<n)
+
+	printf("rvrs ary values: ");
+
+	i=4;
+	while(i >= 0)
 	{
-		//		printf("rvrs ary values");
-		scanf("%d",&a[n-1]);
+		printf("%d ",a[i]);
 		i--;
 	}
-
+	printf("\n");
 }
