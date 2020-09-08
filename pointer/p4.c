@@ -1,24 +1,24 @@
 #include<stdio.h>
+
 void main()
-
 {
+	int *p,a[5];
+	printf("enter the elemnts :");
 
-	int n,i;
-	int arr[5],*p;
-	printf("entr the array elemts :\n");
-	i=0;
-	while(i<5)
+	p=&a[0];
+	while(p < &a[5])
 	{
-		scanf("%d",&arr[i]);
-		i++;
-	}
-//	int p;
-	p=&arr[0];
-	i=0;
-	while(i<5)
-	{
-		printf("arrays elmnts are  :%d\n",*p);
+		scanf("%d",p);
 		p++;
-		i++;
 	}
+
+	p=&a[0];
+	
+	p=&a[0];
+	while(p < &a[5])
+	{
+		printf("arry values %d\n",*p);
+		p++;
+	}
+	
 }

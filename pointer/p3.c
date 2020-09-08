@@ -1,23 +1,21 @@
 #include<stdio.h>
 
 void main()
+
 {
- 	int a,b;
-	printf("emntr the value a :");
+	int a,b;
+	printf("enter the value of a :");
 	scanf("%d",&a);
-	printf("entr the value b :");
+	printf("enter the value of b :");
 	scanf("%d",&b);
 
 	int *p,*q,temp;
-
 	p=&a;
 	q=&b;
-	temp=0;
 
-	temp=*p;
-	*p=*q;
-	*q=temp;
-	printf("swap nubr a is %d\n",*p);
-	printf("swap nubr b is %d\n",*q);
-
+	temp= *p;
+	*p = *q;
+	*q = temp;
+	printf("swap nubr is p %d\n:",*p);
+	printf("swap nubr is q %d\n:",*q);
 }

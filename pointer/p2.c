@@ -1,29 +1,25 @@
 #include<stdio.h>
 
-void main ()
-
+void main()
 {
 	int a,b;
-
-	printf("enter the value a :");
+	printf("enter the value A :");
 	scanf("%d",&a);
-
-	printf("entr the value b :");
+	printf("enter the value B :");
 	scanf("%d",&b);
 
-
 	int *p,*q;
-
-	p = &a;
-	q = &b;
+	p=&a;
+	q=&b;
 
 	if(*p<*q)
 	{
-		printf("max is q %d",*q);
+		printf("max nubr is b %d :\n",*q);
+
 	}
 	else
 	{
-		printf("max is p %d\n",*p);
-	
+		printf("max nubr is a %d :\n",*p);
 	}
+
 }

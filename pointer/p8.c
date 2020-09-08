@@ -36,8 +36,9 @@ void main()
 			{
 				printf("%d\n",*p);
 			}
-		q++;		
+			q++;		
 		}
-	p++;
+
+		p++;
 	}
 }

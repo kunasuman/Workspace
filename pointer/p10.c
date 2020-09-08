@@ -8,7 +8,7 @@ void main()
 	printf("enter the values A :");
 	
 	p=&a[0];
-	while(p < &a[5]);
+	while(p < &a[5])
 	{
 		scanf("%d",p);
 		p++;
@@ -17,24 +17,27 @@ void main()
 	printf("enter the value B :");
 	
 	q=&b[0];
-	while(q < &b[0])
+	while(q < &b[5])
 	{
 		scanf("%d", q);
 		q++;
 	}
 	
 	p=&a[0];
-	while(p < &a[0])
+	r=&c[0];
+	while(p < &a[5])
 	{
 		*r=*p;
 		p++;
+		r++;
 	}
 	
 	q=&b[0];
-	while(q < &b[0])
+	while(q < &b[5])
 	{
 		*r=*q;
 		q++;
+		r++;
 	}
 
 	printf("coppy pointer elmnts\n");

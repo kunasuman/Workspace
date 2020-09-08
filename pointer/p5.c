@@ -2,28 +2,26 @@
 
 void main()
 {
-	int i,arr[5];
-	printf("enter the arry elemts  :\n");
-	i=0;
-	while(i<5)
+	int *p,a[5],temp=0;
+	printf("entr the arry elemnts \n");
+
+	p=&a[0];
+	while(p< &a[5])
 	{
-		scanf("%d",&arr[i]);
-		i++;	
+		scanf("%d",p);
+		p++;
 	}
-	
-	int *m,temp=0;
-	m = &arr[0];
-	i = 0;
-	while(i<5)
+
+	p=&a[0];
+
+	while(p < &a[5])
 	{
-		if(*m>temp)
+		if(*p>temp)
 		{
-			temp=*m;
-	//		printf("max is %d\n",*m);
+			temp=*p;	
 			
 		}
-		m++;
-		i++;
+		p++;
 	}
-	printf("max is %d \n",temp);
+	printf("grst nubr is %d\n",temp);
 }

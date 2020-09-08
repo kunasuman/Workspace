@@ -1,27 +1,24 @@
-
 #include<stdio.h>
 
 void main()
 {
+	int a,b,c;
 
-	int a;
-	int b;
-	int c;
-	int *p,*q,*r;
-	int sum;
-	printf("entr the value a :");
+	printf("enter the value of A :");
 	scanf("%d",&a);
-	printf("entr the value b :");
+	printf("enter the value of B :");
 	scanf("%d",&b);
-	printf("enter the value c :");
+	printf("enter the value of C :");
 	scanf("%d",&c);
 
+	int *p,*q,*r;
 	p=&a;
 	q=&b;
-	r=&c;
+	r=&c;	
+	int sum=0;
 
-	sum= *p+ *q + *r;
-	printf("sum %d\n",sum);
+	sum = *p + *q + *r;
+	printf("sum =%d\n",sum );
 
 
 }
