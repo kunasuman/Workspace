@@ -2,24 +2,23 @@
 
 void main()
 {
-	int i,a[5];
+	int *p,a[5];
 	printf("enter the elemnts :");
 
-	i=0;
-	while(i<5)
+	p=&a[0];
+	while(p < &a[5])
 	{
-		scanf("%d",&a[i]);
-		i++;
+		scanf("%d",p);
+		p++;
 	}
-	int *p;
+
 	p=&a[0];
 	
-	i=0;
-	while(i<5)
+	p=&a[0];
+	while(p < &a[5])
 	{
 		printf("arry values %d\n",*p);
 		p++;
-		i++;
 	}
 	
 }

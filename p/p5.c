@@ -2,20 +2,19 @@
 
 void main()
 {
-	int i,a[5];
+	int *p,a[5],temp=0;
 	printf("entr the arry elemnts \n");
 
-	i=0;
-	while(i<5)
+	p=&a[0];
+	while(p< &a[5])
 	{
-		scanf("%d",&a[i]);
-		i++;
+		scanf("%d",p);
+		p++;
 	}
-	int *p,temp=0;
+
 	p=&a[0];
 
-	i=0;
-	while(i<5)
+	while(p < &a[5])
 	{
 		if(*p>temp)
 		{
@@ -23,7 +22,6 @@ void main()
 			
 		}
 		p++;
-		i++;
 	}
 	printf("grst nubr is %d\n",temp);
 }

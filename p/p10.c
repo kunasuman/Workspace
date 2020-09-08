@@ -2,43 +2,48 @@
 
 void main()
 {
-	int i,j,a[5],b[5],c[10];
-	printf("enter the value A :");
-	i=0;
-	while(i<5)
-	{
-		scanf("%d",&a[i]);
-		i++;
-	}
-	printf("enter the value B :");
-	j=0;
-	while(j<5)
-	{
-		scanf("%d",&b[j]);
-		j++;
-	}
+	int a[5],b[5],c[10];
 	int *p,*q,*r;
+
+	printf("enter the values A :");
+	
 	p=&a[0];
+	while(p < &a[5]);
+	{
+		scanf("%d",p);
+		p++;
+	}
+
+	printf("enter the value B :");
+	
 	q=&b[0];
-	r=&c[0];
-	i=0;
-	while(i<5)
+	while(q < &b[0])
+	{
+		scanf("%d", q);
+		q++;
+	}
+	
+	p=&a[0];
+	while(p < &a[0])
 	{
 		*r=*p;
-		i++;
+		p++;
 	}
-	j=0;
-	while(j<5)
+	
+	q=&b[0];
+	while(q < &b[0])
 	{
 		*r=*q;
-		j++;
+		q++;
 	}
-	printf("coppy pointer elmnts\n",);
-	i=0;
-	while(i<10)
+
+	printf("coppy pointer elmnts\n");
+
+	r=&c[0];
+	while(r < &c[10])
 	{
 		printf("%d\n",*r);
-		i++;
+		r++;
 	}
 
 }

@@ -2,20 +2,22 @@
 
 void main()
 {
-	int i,a[5];
+	int *p,*q,temp,a[5];
+
 	printf("enter the arry elmnt\n");
-	i=0;
-	while(i<5)
+
+	p=&a[0];
+	while(p < &a[5])
 	{	
 		//scanf("%d\n",&a[i]);
-		scanf("%d",&a[i]);
-		i++;
+		scanf("%d",p);
+		p++;
 	}
-	int *p,*q,temp;
+
 	p=&a[0];
 	q=&a[4];
-	i=0;
-	while(p<q)
+
+	while(p < q)
 	{
 		temp=*p;
 		*p = *q;
@@ -23,11 +25,11 @@ void main()
 		p++;
 		q--;
 	}
-	i=0;
-	while(i<5)
+	p=&a[0];
+	while(p < &a[5])
 	{
 	
-		printf("rvrs of array  %d\n",a[i]);
-		i++;
+		printf("rvrs of array  %d\n", *p);
+		p++;
 	}
 }

@@ -3,7 +3,9 @@
 void main()
 {
 	int i,j,a[5];
-	printf("enter the values");
+
+	printf("enter the values \n");
+
 	i=0;
 	while(i<5)
 	{
@@ -12,10 +14,10 @@ void main()
 	}
 	int *p,*q,temp;
 	p=&a[0];
-	q=&a[0];
 	i=0;
 	while(i<5)
 	{
+		q=&a[0];
 		j=0;
 		while(j<5)
 		{
@@ -34,10 +36,12 @@ void main()
 	}	
 	printf("sort elemnts :\n");
 	i=0;
+	p=&a[0];
 	while(i<5)
 	{
 		printf("%d\n",*p);
 		i++;
+		p++;
 	}
 
 }
