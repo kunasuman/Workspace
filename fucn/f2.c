@@ -1,29 +1,26 @@
 #include<stdio.h>
-void suman(int,int,int);
+
+void callfuction(int);
 void main()
 {
+	int pow,base,a,c;
 
-	int a;
-	int b;
-	int c;
+	printf("enter the base :");
+	scanf("%d",&base);
+	printf("enter the power :");
+	scanf("%d",&pow);
 
-	printf("entr the value a :");
-	scanf("%d",&a);
-	printf("enet the value b :");
-	scanf("%d",&b);
-	printf("entr the value c :");
-	scanf("%d",&c);
-	
-//	res = a+b+c;
-	suman(a,b,c);
-//	res =a+b+c;
+	callfuction(c);
+
 }
-
-void suman(int a ,int b ,int c )
+void callfuction(int c)
 {
-	int res;
-	res = a+b+c;		
-	printf("sum a,b,c %d\n",res);
+	int res=1;
+	while(c>0)
+	{
+		res = res *c;
+		c--;
+	}
+	printf("resu %d\n",res);
 
 }
-

@@ -1,31 +1,24 @@
 #include<stdio.h>
-void high(int,int);
-void main()
-{
 
-	int a;
-	int b;
-	printf("entr the values a :");
-	scanf("%d",&a);
-	printf("entr the values b :");
-	scanf("%d",&b);
-	
-	high(a,b);
+void fact(int);
+void main ()
+{
+	int n,a;
+	printf("enter the fac nubr is :");
+	scanf("%d",&n);
+
+	fact(n);
 
 }
-
-void high(int a,int b)
+void fact(int n)
 {
-	int high;
-	if(a<b)
+	int res=1,b=1;
+	while(b<=n)
 	{
-	
-		printf("max nubr is b =%d",b);
-	}	
-	else
-	{
-		printf("max nubr is a:=%d",a);
+		res = res *b;
+		b++;	
 	}
-	
+	printf("fact is %d\n",res);
 
 }
+
