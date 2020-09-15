@@ -1,3 +1,5 @@
+//print factroial nuber
+
 #include<stdio.h>
 
 void fact(int);
