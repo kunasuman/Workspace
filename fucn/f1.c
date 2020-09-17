@@ -1,7 +1,6 @@
 #include<stdio.h>
 
-void e( int );
-
+void evn_odd( int,int);
 
 void main()
 {
@@ -9,27 +8,22 @@ void main()
 
 	printf("enter the value\n");
 	scanf("%d",&n);
+	printf("enter o for even, 1 for odd\n");
+	scanf("%d",&i);
 
-	e (n );
+	evn_odd (n ,i);
 }
 
-void e (int n)
+void evn_odd (int n,int optn)
 {
 	int i;
-	printf("entyer the n value of nubrs\n");
 	i=1;
 	while(i<=n)
 	{
-		if((i%2 ==0))
-		{
-			printf("nubr is even %d\n",i);
-		}
-
-		if(i%2==1)
-		{
-
-			printf("nubr is odd %d\n",i);
-		}
+		if((i%2 == optn))
+			printf("evn nubr is %d\n",i);
+//		else
+//			printf("odd nubr is %d\n",i);
 		i++;
 	}
 

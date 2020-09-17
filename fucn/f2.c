@@ -2,26 +2,29 @@
 
 #include<stdio.h>
 
-void callfuction(int,int);
+int callfuction(int,int);
+
 void main()
 {
-	int pow,base;
+	int pow,base,res;
 	printf("enter the base :");
 	scanf("%d",&base);
 	printf("enter the power :");
 	scanf("%d",&pow);
 
-	callfuction(base , pow);
+	res=callfuction(base , pow);
+	printf("resu %d\n",res);
 
 }
-void callfuction(int c,int a)
+int callfuction(int c,int a)
 {
 	int res=1;
 	while(a>0)
 	{
-		res = res *c;
+		res = res * c;
 		a--;
 	}
-	printf("resu %d\n",res);
+	return res;
+//	printf("resu %d\n",res);
 
 }

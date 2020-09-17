@@ -2,17 +2,17 @@
 
 #include<stdio.h>
 
-void fact(int);
+int fact(int);
 void main ()
 {
-	int n,a;
+	int n,a,res;
 	printf("enter the fac nubr is :");
 	scanf("%d",&n);
 
-	fact(n);
-
+	res=fact(n);
+	printf("fac is %d\n",res);
 }
-void fact(int n)
+int fact(int n)
 {
 	int res=1,b=1;
 	while(b<=n)
@@ -20,7 +20,9 @@ void fact(int n)
 		res = res *b;
 		b++;	
 	}
-	printf("fact is %d\n",res);
+
+	return res;
+//	printf("fact is %d\n",res);
 
 }
 
