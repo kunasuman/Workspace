@@ -1,32 +1,33 @@
 #include<stdio.h>
 
-void rep(char *);
+int rep(char * , char);
 
 void main()
 {
-	char b[100],c;
-	int i,cnt;
+	char b[100],ch;
+	int c;
 	printf("enter the string:");
 	gets(b);
 	printf("srchd elemnt :");
-	scanf("%s",&c);
+	scanf("%c",&ch);
 	
-	rep(b);
-//	printf("reptd letter %d\n:",cnt);
+	c=rep(b,ch);
+	printf("reptd letter %d\n:",c);
 }
-void rep(char *a )
+int rep(char *a,char e )
 {
-	int c,i,cnt=0;
+	int c=0,i;
 	i=0;
 	while( a[i]!='\0')
 	{
-		if(a[i]=c)
+		if(a[i]==e)
 		{
-	        	cnt++;
+	        	c++;
 		}
 	
 	i++;
 	}
-	printf("reptd letters %d\n :",cnt);
+	return c;
+//	printf("reptd letters %d\n :",cnt);
 
 }

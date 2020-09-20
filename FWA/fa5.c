@@ -14,13 +14,13 @@ void main()
 
 	printf("entr a word :");
 	gets(b);
-	
+
 	cs(a,b);
 }
 void cs( char *s, char *w)
 {
-	char *p=s,
-	    char *q=w;
+	char *p=s;
+	char *q=w;
 	bool res;
 
 	while(*p!='\0')
@@ -36,26 +36,25 @@ void cs( char *s, char *w)
 			p++;
 	}
 }
-bool cw(char *p,char *q)
+bool cw(char *c ,char *q)
 {
-	char *p=s,
-	    char *q=w;            
+	char *r=c;
+	char *t=q;            
 	int commnletter=0;
 	int len;
 
 	len =strlen(q);
-	while((*p!='\0')&&(*p!=' ')&&(*q!='\0')
+	while((*r!='\0')&&(*r!=' ')&&(*t!='\0'))
 	{
-		if(*p==*q)
-		{
+		if(*r==*t)
+			{
 			commnletter++;
-		
-		}
-		p++;
-		q++;
+			}
+			r++;
+			t++;
 	}
 
-	if(commnletter==len)
-	return true;
-	return false;	
+		if(commnletter==len)
+			return true;
+			return false;
 }
